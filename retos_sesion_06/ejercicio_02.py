@@ -18,7 +18,7 @@ b = True
 print ((a or b) and not (a and b))
 
 print()
-print ("Operador NXOR")
+print ("Operador XNOR")
 a = True
 b = False
 print (not ((a or b) and not (a and b)))
