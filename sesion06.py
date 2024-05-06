@@ -121,9 +121,12 @@ sensor = False
 bateria = False
 print (sensor, "and", bateria, "=", sensor and bateria)
 
+# Determine si el numero 20 esta en el rango a a 100
 num = 20
 print (num >= 0 & num <= 100)
 
+# Un estudiante obtuvo las siguientes notas en sus examenes: 15, 20, 16. Determinar si
+# el estudiante aprobo con una nota susperior a 50
 nota1 = 15
 nota2 = 20
 nota3 = 16
@@ -131,11 +134,12 @@ suma = nota1 + nota2 + nota3
 print (suma >= 50)
 print ("Estudiante si aprobo con nota de: ", suma)
 
+# Determinar si el numero 15 es divisible por 3 y 5 pero no por 2
 numb = 15
-div = 3
-divv = 5
-noDiv = 2
-print ((numb % 3 == False) & (numb % 5 == False) & (numb % 2 != False))
+div3 = 3
+div5 = 5
+noDiv2 = 2
+print ((numb % div3 == False) & (numb % div5 == False) & (numb % noDiv2 != False))
 
 print ("Cortocircuito con operador and")
 x = 1
