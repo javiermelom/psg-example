@@ -22,9 +22,6 @@ var_booleana = False
 print (var_booleana)
 print (type(var_booleana))
 
-var_booleana = False
-print (var_booleana)
-print (type(var_booleana))
 print ("Declarar mediante función bool()")
 var_booleana = bool(1)
 print (var_booleana)
