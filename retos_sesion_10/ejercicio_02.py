@@ -8,5 +8,5 @@ menu_mexicano = {"Tacos", "Enchiladas", "Guacamole", "Tamales"}
 menu_italiano = {"Pizza", "Pasta", "Lasagna", "Tiramisú"}
 # menu_fusion = menu_mexicano.update({"Pizza", "Pasta", "Lasagna", "Tiramisú"})
 menu_fusion = menu_mexicano.copy()
-menu_fusion.update({"Pizza", "Pasta", "Lasagna", "Tiramisú"})
+menu_fusion |= menu_italiano
 print ("El menu fusion es el siguiente:", menu_fusion)
