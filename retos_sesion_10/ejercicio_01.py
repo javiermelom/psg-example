@@ -4,4 +4,19 @@
 
 # Anita: Sushi, Pizza, Tacos, Hamburguesa, Pasta, Alitas
 # Pepito: Pizza, Tacos, Ensalada, Pasta, Helado, Milanesa
-# Si la cantidad platos de comida que tienen en comunes mayor a 50% entonces ambos seguirán saliendo
+# Si la cantidad platos de comida que tienen en comun es mayor a 50% entonces ambos seguirán saliendo
+anitas_plates = {'Sushi', 'Pizza', 'Tacos', 'Hamburguesa', 'Pasta', 'Alitas'}
+pepitos_plates = {'Pizza', 'Tacos', 'Ensalada', 'Pasta', 'Helado', 'Milanesa'}
+len_plates_anitas = len(anitas_plates)
+len_plates_pepitos = len(pepitos_plates)
+len_average = (len_plates_anitas + len_plates_pepitos) / 2
+
+print (len_plates_anitas)
+print (len_plates_pepitos)
+print (len_average)
+interseccion = anitas_plates.intersection(pepitos_plates)
+print (interseccion)
+len_interseccion = len(interseccion)
+print (len_interseccion)
+result = (len_interseccion > len_average)
+print ("Anita y Pepito seguiran saliendo:", result)
