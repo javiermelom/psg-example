@@ -75,7 +75,6 @@ print(type(diccionario))
 # Diccionario vacío, se declara con llaves {} o con la función dict()
 # Es la razón por la que no se usa {} para crear un conjunto vacío
 # Los diccionarios nacieron antes que los conjuntos
-
 # Para mantener la consistencia y claridad y coherencia
 # Se mantuvo la sintaxis de los diccionarios vacíos con {}
 
