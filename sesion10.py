@@ -140,6 +140,8 @@ print(conjunto)
 #       pop() elimina un elemento aleatorio del conjunto y lo retorna
 #       clear() elimina todos los elementos del conjunto
 #       Solo pop() retorna el elemento eliminado
+#       La diferencia entre discard y remove, es que con discard si no existe el valor a eliminiar
+#       no envia error, pero con remove si no existe el valor a eliminar si arroja error
 
 print ("Método remove()")
 conjunto = {'🍕','🍔','🍟','🌭'} 
