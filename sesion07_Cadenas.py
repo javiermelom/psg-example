@@ -99,6 +99,7 @@ cadena = "cadena Inicial #1"
 mayuscula  = cadena.upper()
 print (cadena)
 print (mayuscula)
+
 print ("Función Lower")
 cadena = "Cadena INICIAL #2"
 minuscula  = cadena.lower()
