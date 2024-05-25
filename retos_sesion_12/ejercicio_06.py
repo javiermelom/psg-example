@@ -27,3 +27,25 @@ elif (operator == "/"):
         print ("Num2 es cero y no se puede dividir por cero")
 else:
     print ("Ingreso un operador Invalido")
+    
+    
+# if (operator != "+" or operator != "-" or operator != "*" or operator != "/"):
+#     print ("Digito un operador invalido")
+# else:
+#     num2 = float(input("Ingresa segundo numero: "))
+#     if (operator == "+"):
+#         result = num1 + num2
+#         print (f"El resultado de sumar {num1} + {num2} es: {result}")
+#     elif (operator == "-"):
+#         result = num1 - num2
+#         print (f"El resultado de restar {num1} - {num2} es: {result}")
+#     elif (operator == "*"):
+#         result = num1 * num2
+#         print (f"El resultado de multiplicar {num1} * {num2} es: {result}")
+#     else:
+#         if num2:
+#             result = num1 / num2
+#             print (f"El resultado de dividir {num1} / {num2} es: {result}")
+#         else:
+#             print ("Num2 es cero y no se puede dividir por cero")
+# print ("FIN")
