@@ -80,8 +80,8 @@ print ("Fin")
 # if-anidado
 # La sentencia if anidado permite ejecutar un bloque de código si se cumple una condición
 # Dentro del bloque de código del if-else se puede anidar otro if-else de manera ilimitada
-#Como se declara un if-anidado
-#if-anidado tiene la siguiente estructura
+# Como se declara un if-anidado
+# if-anidado tiene la siguiente estructura
 
 print ("Inicio Anidado")
 condicion_1 = True
@@ -190,7 +190,8 @@ print ("Fin")
 
 # Se puede utilizar un flotante como condición
 # Introducir dos números flotantes y dividirlos
-# 	print ("Truthiness Flotantes")
+
+print ("Truthiness Flotantes")
 dividendo = float(input("Dividendo: "))
 divisor = float(input("Divisor: "))
 print (dividendo,divisor)
