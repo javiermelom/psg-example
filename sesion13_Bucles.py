@@ -5,6 +5,7 @@
 # En Python existen dos tipos de ciclos
 # Ciclo for
 # Ciclo while
+
 # For
 # El ciclo for es un ciclo que se ejecuta un número determinado de veces
 # En el caso de los for se recorre una secuencia de elementos
@@ -174,9 +175,10 @@ for i, animal in enumerate(animales):
 
 # Ejercicio 2, imprimir la cantidad de veces los elementos de la cadena '⚽🏀🏐🎱' 
 # de acuerdo a su posición más 1
-cadena = '⚽🏀🏐🎱'
-for element in enumerate(cadena):
-    print (element * (1 + i))
+print ("Ejercicio 2")
+esferas = '⚽🏀🏐🎱'
+for i, esfera in enumerate(esferas):
+    print(esfera*(i+1))
     
 # While
 # El ciclo while es un ciclo que se ejecuta mientras una condición sea verdadera
@@ -185,7 +187,7 @@ for element in enumerate(cadena):
 
 # La estructura de control while es la siguiente
 # while condicion:
-    print("Código a ejecutar")
+    # print("Código a ejecutar")
     
 # while es la palabra reservada
 # condicion es la expresión que se evaluará tiene que ser True o False
@@ -315,7 +317,7 @@ while True:
 # condicion es la expresión que se evaluará
 # [ y ] son los delimitadores de la lista
 
-#Ejemplo 17, Crear una lista de los números pares del 2 al 10
+# Ejemplo 17, Crear una lista de los números pares del 2 al 10
 print ("Ejemplo 17")
 pares = [i for i in range(2, 11, 2)]
 print(pares)
