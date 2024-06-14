@@ -106,11 +106,15 @@ print (fruta)
 # No recibe argumentos de entrada
 # Devuelve múltiples valores
 # Devuelve una tupla en Python
+# Esto tambien se llama empaquetado y desempaquetado
 def funcion():
     return "Bloque", "de", "código"
 
+x,y,z = funcion()
+print (type(x), x,y,z)
 resultado = funcion()
 print (resultado)
+print (type(resultado))
 
 
 # Ejemplo 3, Crear una función que devuelva un saludo en dos idiomas
@@ -148,17 +152,6 @@ def obtener_fruta_y_color():
 
 resultado = obtener_fruta_y_color()
 print( resultado, type(resultado))
-
-# /////////////////////////////////
-def fruta_color():
-    frutas = {'🍅', '🍌', '🍎', '🍇', '🍉'}
-    colores = {'🔴', '🟠', '🟡', '🟢', '🔵'}
-    return frutas.pop(), colores.pop()
-
-
-fruta = fruta_color()
-color = fruta_color()
-print(fruta, color)
 
 # //////////////////////////////
 def devolver_fruta_color():
@@ -325,13 +318,23 @@ def jugar_piedra_papel_tijera(jugada1, jugada2):
 
 while True:
     jugador1 = input("Jugador 1: ")
+    jugador1 = jugador1.lower()
     if jugador1 == "salir":
+        print ("Fin del juego por jugador 1")
         break
-    jugador2 = input("Jugador 2: ")
-    if jugador2 == "salir":
-        break
-    resultado = jugar_piedra_papel_tijera(jugador1, jugador2)
-    print (resultado)
+    if jugador1 == "piedra" or jugador1 == "papel" or jugador1 == "tijera":
+        jugador2 = input("Jugador 2: ")
+        jugador2 = jugador2.lower()
+        if jugador2 == "salir":
+            print ("Fin del juego por jugador 2")
+            break
+        if jugador2 == "piedra" or jugador2 == "papel" or jugador2 == "tijera":
+            resultado = jugar_piedra_papel_tijera(jugador1, jugador2)
+            print (resultado)
+        else:
+            print ("Jugador 2 ingreso op no valida")
+    else:
+            print ("Jugador 1 ingreso op no valida")
     
 # Variables globales y locales
 # Las variables globales son accesibles desde cualquier parte del programa
@@ -382,6 +385,21 @@ cadena = "python es un lenguaje de programación"
 resultado = formato_vocales()
 
 print (resultado)
+
+# ////////////////////////////
+
+cadena = "python es un lenguaje de programación"
+def funcion_vocales():
+    titulo = cadena.title()
+    cont = 0
+    for vocal in titulo:
+        if vocal == "a" or vocal == "e" or vocal == "i" or vocal == "o" or vocal == "u":
+            cont +=1
+    return cont
+
+resultado = funcion_vocales()
+print (resultado)
+
 
 # Args y Kwargs
 # *args es una lista de parámetros sin clave

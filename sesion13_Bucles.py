@@ -252,10 +252,10 @@ print ("Fin")
 # Ejemplo 15, Crear un ciclo infinito que imprima un contador incremental
 print ("Ejemplo 15")
 contador = 0
-while True:
-    print(contador)
-    contador += 1
-print ("Fin")
+# while True:
+    # print(contador)
+    # contador += 1
+# print ("Fin")
 
 # Ejemplo 16, Crear un ciclo infinito que pida una cadena de texto la 
 # ponga en mayúsculas y la imprima hasta que se ingrese la palabra salir
