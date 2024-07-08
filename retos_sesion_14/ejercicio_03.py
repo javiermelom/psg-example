@@ -7,4 +7,4 @@ def num_fibonacci(num):
         return num_fibonacci(num-1) + num_fibonacci(num-2)
 
 num = int(input("Digite numero para calcular serie Fibonacci: "))
-print(f"El número {num} de la serie Fibonacci es {num_fibonacci(num)}")
+print(f"El número {num} de la serie Fibonacci es {num_fibonacci(num) - 1}")

@@ -1,9 +1,11 @@
 # Crear una función que reciba una lista de números y devuelva solo los números pares
-def num_pares(list_numeros):
-    return [num for num in list_numeros if num % 2 == 0]
+def num_pares (numeros):
+    return [num for num in numeros if num % 2 == 0]
 
-# list_numeros = list(input("Ingrese lista numeros: "))
-# print (list_numeros, type(list_numeros))
-list_numeros = [2,4,3,5,6,7,8,9,18,20,11,13,16]
-resultado = num_pares(list_numeros)
-print(f"Los números pares en la lista ingresada son {resultado}")
+list_caracter = input("Ingrese lista numeros sin espacios y separados por el simbolo de coma: ")
+print (type(list_caracter), list_caracter)
+list_separados = list_caracter.split(",")
+print(type(list_separados),list_separados)
+lista_numeros = list(map(int, list_separados))
+resultado = num_pares (lista_numeros)
+print (resultado)
